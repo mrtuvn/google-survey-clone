@@ -1,0 +1,245 @@
+.form-customerSurvey div.mage-error-edit {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #a50034;
+}
+
+.form-customerSurvey div.mage-error-edit:before {
+  padding: 1px;
+  font-family: "LG Icons";
+  float: left;
+  margin-right: 5px;
+  font-size: 20px;
+  line-height: 100%;
+  color: #a50034;
+  content: "\e970";
+  vertical-align: top;
+  display: inline-block;
+  font-weight: 400;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Frontend styles survey success page */
+.survey-rates-success {
+  max-width: 976px;
+  margin-inline: auto;
+  margin-block: 10px;
+}
+
+.survey-main-text {
+  font-family: "LG Smart";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+
+.survey-rate-label {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #6d6e71;
+  gap: 10px;
+  display: flex;
+}
+
+.rates-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.survey-rates-success .rate {
+  width: 70px;
+  height: 70px;
+  border-radius: 9999px;
+  color: #000;
+  background: #dfdfdf;
+  font-family: LG Smart;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.survey-rates-success .rate:hover {
+  background: #a50034;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .rates-list {
+    gap: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rates-list {
+    gap: 32px;
+  }
+
+  .survey-rate-label {
+    justify-content: space-between;
+  }
+}
+
+/* styles for tw component survey */
+
+[class*="linear_range"] input + label {
+  background: #dfdfdf;
+  border-radius: 9999px; /* rounded */
+  color: #000;
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+
+  font-family: LG Smart;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+[class*="linear_range"] input:checked + label {
+  background: #a50034;
+  color: #fff;
+}
+
+/* pick many grid */
+
+[class*="pick_many_grid"] tbody tr {
+  background: #f5f5f5;
+}
+
+[class*="pick_many_grid"] {
+  margin-block: 10px;
+}
+
+[class*="pick_many_grid"] th,
+[class*="pick_many_grid"] td {
+  padding: 15px 20px;
+}
+
+[class*="pick_many_grid"] thead th,
+[class*="pick_many_grid"] tbody tr td {
+  text-align: center;
+}
+
+[class*="pick_many_grid"] thead th {
+  font-family: "LG Smart";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: var(--color-black, #000);
+}
+[class*="pick_many_grid"] tbody th {
+  text-align: left;
+  font-family: "LG Smart";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: var(--color-black, #000);
+}
+
+@media (max-width: 767px) {
+  [class*="pick_many_grid"] th,
+  [class*="pick_many_grid"] td {
+    padding: 8px 10px;
+  }
+
+  [class*="pick_many_grid"] .step-content {
+    overflow: hidden;
+  }
+  [class*="pick_many_grid"] .table-inner-scroll {
+    overflow-x: auto;
+    width: 100%;
+  }
+  [class*="pick_many_grid"] table {
+  }
+  [class*="pick_many_grid"] th.sticky-title {
+    position: sticky;
+    z-index: 100;
+    background: white;
+    max-width: 70px;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+  [class*="pick_many_grid"] th,
+  [class*="pick_many_grid"] td {
+    white-space: nowrap;
+  }
+}
+/* end pick many grid */
+
+[class*="pick_many"] {
+}
+
+[class*="pick_one"] {
+}
+
+[class*="short_answer"] {
+}
+
+.form-customerSurvey button.submit.primary {
+  background: #a50034;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-customerSurvey input[type="reset"] {
+  font-family: LG Smart;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: right;
+  color: #a50034;
+}
+
+.form-customerSurvey textarea {
+  background: #f5f5f5;
+  border-radius: 5px;
+  color: #6d6e71;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.form-customerSurvey .fieldset {
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1056px;
+}
+
+/* form */
+@media (max-width: 767px) {
+  .form-customerSurvey .fieldset {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-customerSurvey .fieldset {
+    padding: 40px;
+    margin-bottom: 25px;
+  }
+}
